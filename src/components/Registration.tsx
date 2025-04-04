@@ -16,7 +16,7 @@ const Registration: React.FC = () => {
           <h2 className="mb-4">Registration</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Join us at the 9th International Conference on Sustainable Energy and Environmental Challenges
+            Join us at the 10th International Conference on Sustainable Energy and Environmental Challenges
           </p>
         </div>
         
@@ -51,7 +51,7 @@ const Registration: React.FC = () => {
             </div>
             
             <p className="mt-4 text-sm text-gray-600">
-              * Early bird registration fees (10% discount) are available until January 25, 2024
+              * Early bird registration fees (10% discount) are available until January 25, 2025
             </p>
           </div>
           

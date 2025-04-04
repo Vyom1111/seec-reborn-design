@@ -35,7 +35,7 @@ const CallForPapersPage: React.FC = () => {
             <h1 className="mb-4">Call for Papers</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Submit your research papers for IX SEEC 2024
+              Submit your research papers for X SEEC 2025
             </p>
           </div>
 
@@ -47,8 +47,8 @@ const CallForPapersPage: React.FC = () => {
                   Call for Papers
                 </h2>
                 <p className="mb-4">
-                  The organizing committee of the 9th International Conference on Sustainable Energy and Environmental 
-                  Challenges (SEEC-2024) invites researchers, academicians, industry professionals, and students to 
+                  The organizing committee of the 10th International Conference on Sustainable Energy and Environmental 
+                  Challenges (SEEC-2025) invites researchers, academicians, industry professionals, and students to 
                   submit their original research work for presentation at the conference.
                 </p>
                 <p className="mb-4">
@@ -96,7 +96,7 @@ const CallForPapersPage: React.FC = () => {
                   <li>All submissions will undergo double-blind peer review.</li>
                   <li>At least two reviewers will evaluate each submission.</li>
                   <li>Review criteria include originality, significance, technical soundness, and clarity.</li>
-                  <li>Notification of acceptance will be sent by January 15, 2024.</li>
+                  <li>Notification of acceptance will be sent by January 15, 2025.</li>
                 </ul>
               </div>
             </div>
@@ -119,7 +119,7 @@ const CallForPapersPage: React.FC = () => {
             
             <div className="text-center">
               <a 
-                href="https://easychair.org/seec2024" 
+                href="https://easychair.org/seec2025" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary"

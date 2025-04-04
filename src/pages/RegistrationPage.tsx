@@ -21,7 +21,7 @@ const RegistrationPage: React.FC = () => {
             <h1 className="mb-4">Registration</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Join us at the 9th International Conference on Sustainable Energy and Environmental Challenges
+              Join us at the 10th International Conference on Sustainable Energy and Environmental Challenges
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const RegistrationPage: React.FC = () => {
               </div>
               
               <div className="mt-4 space-y-2 text-sm text-gray-600">
-                <p>* Early bird registration fees (10% discount) are available until January 25, 2024</p>
+                <p>* Early bird registration fees (10% discount) are available until January 25, 2025</p>
                 <p>* At least one author must register for each accepted paper</p>
                 <p>* Registration fee includes conference kit, proceedings, lunch, tea/coffee, and conference dinner</p>
               </div>
@@ -136,8 +136,8 @@ const RegistrationPage: React.FC = () => {
                   <li>At least one author must register for each accepted paper</li>
                   <li>Each registration covers only one paper presentation</li>
                   <li>For additional paper presentations, a fee of ₹5,000 (or $150 for international delegates) will be charged</li>
-                  <li>Cancellations made before January 31, 2024, will receive a 50% refund</li>
-                  <li>No refunds will be provided for cancellations after January 31, 2024</li>
+                  <li>Cancellations made before January 31, 2025, will receive a 50% refund</li>
+                  <li>No refunds will be provided for cancellations after January 31, 2025</li>
                   <li>Registration can be transferred to another person from the same organization with prior approval</li>
                 </ul>
               </div>

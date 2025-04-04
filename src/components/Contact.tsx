@@ -26,9 +26,9 @@ const Contact: React.FC = () => {
                     <h4 className="font-semibold mb-1">Address</h4>
                     <p className="text-gray-600">
                       Department of Mechanical Engineering<br />
-                      Indian Institute of Technology Indore<br />
-                      Khandwa Road, Simrol<br />
-                      Indore 453552, India
+                      Indian Institute of Technology Jodhpur<br />
+                      NH 62, Surpura Bypass Rd, Karwar<br />
+                      Jheepasani, Rajasthan 342030, India
                     </p>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
                   <Mail className="text-seec-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-600">seec2024@iiti.ac.in</p>
+                    <p className="text-gray-600">seec2025@iiti.ac.in</p>
                     <p className="text-gray-600">seec.conference@gmail.com</p>
                   </div>
                 </div>

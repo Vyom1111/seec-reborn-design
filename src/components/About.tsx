@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <section id="about" className="section-padding bg-white">
       <div className="container mx-auto container-padding">
         <div className="text-center mb-12">
-          <h2 className="mb-4">About IX SEEC</h2>
+          <h2 className="mb-4">About X SEEC</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
             The International Conference on Sustainable Energy and Environmental Challenges
@@ -16,9 +16,9 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-gray-700 mb-4">
-              The 9th International Conference on Sustainable Energy and Environmental Challenges (SEEC-2024) 
-              will be held from February 19-22, 2024, at the Department of Mechanical Engineering, Indian Institute 
-              of Technology Indore, India.
+              The 10th International Conference on Sustainable Energy and Environmental Challenges (SEEC-2025) 
+              will be held from December 15-18, 2025, at the Department of Mechanical Engineering, Indian Institute 
+              of Technology Jodhpur, India.
             </p>
             <p className="text-gray-700 mb-4">
               SEEC is a premier international conference that brings together researchers, scientists, engineers, 

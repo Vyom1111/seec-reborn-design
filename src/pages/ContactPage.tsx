@@ -31,9 +31,9 @@ const ContactPage: React.FC = () => {
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-gray-600">
                         Department of Mechanical Engineering<br />
-                        Indian Institute of Technology Indore<br />
-                        Khandwa Road, Simrol<br />
-                        Indore 453552, India
+                        Indian Institute of Technology Jodhpur<br />
+                        NH 62, Surpura Bypass Rd, Karwar<br />
+                        Jheepasani, Rajasthan 342030, India
                       </p>
                     </div>
                   </div>
@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
                     <Mail className="text-seec-600 mr-4 mt-1 flex-shrink-0" size={24} />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">seec2024@iiti.ac.in</p>
+                      <p className="text-gray-600">seec2025@iiti.ac.in</p>
                       <p className="text-gray-600">seec.conference@gmail.com</p>
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const ContactPage: React.FC = () => {
                       allowFullScreen 
                       loading="lazy" 
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="IIT Indore Map"
+                      title="IIT Jodhpur Map"
                     ></iframe>
                   </div>
                 </div>
@@ -143,9 +143,9 @@ const ContactPage: React.FC = () => {
             <div className="mt-16">
               <h2 className="text-2xl font-semibold mb-6 text-center">Travel Information</h2>
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="text-lg font-medium mb-3">How to Reach IIT Indore</h3>
+                <h3 className="text-lg font-medium mb-3">How to Reach IIT Jodhpur</h3>
                 <p className="mb-4">
-                  IIT Indore is located in Simrol, approximately 25 km from Indore city center.
+                  IIT Jodhpur is located in Simrol, approximately 25 km from Jodhpur city center.
                 </p>
                 
                 <div className="space-y-4">
@@ -153,23 +153,23 @@ const ContactPage: React.FC = () => {
                     <h4 className="font-semibold">By Air</h4>
                     <p>
                       Devi Ahilyabai Holkar International Airport (IDR) is well-connected to major cities in India. 
-                      From the airport, you can hire a taxi to reach IIT Indore (approximately 35 km).
+                      From the airport, you can hire a taxi to reach IIT Jodhpur (approximately 35 km).
                     </p>
                   </div>
                   
                   <div>
                     <h4 className="font-semibold">By Train</h4>
                     <p>
-                      Indore Junction is the main railway station, well-connected to major cities across India. 
-                      From the station, you can hire a taxi or take a bus to reach IIT Indore.
+                      Jodhpur Junction is the main railway station, well-connected to major cities across India. 
+                      From the station, you can hire a taxi or take a bus to reach IIT Jodhpur.
                     </p>
                   </div>
                   
                   <div>
                     <h4 className="font-semibold">By Road</h4>
                     <p>
-                      Indore has good road connectivity with major cities. Regular buses operate between Indore 
-                      city and IIT Indore campus.
+                      Jodhpur has good road connectivity with major cities. Regular buses operate between Jodhpur 
+                      city and IIT Jodhpur campus.
                     </p>
                   </div>
                 </div>

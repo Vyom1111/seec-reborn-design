@@ -25,17 +25,17 @@ const DatesPage: React.FC = () => {
     },
     {
       event: "Notification of Paper Acceptance",
-      date: "January 15, 2024",
+      date: "January 15, 2025",
       isExtended: false
     },
     {
       event: "Early Bird Registration",
-      date: "January 25, 2024",
+      date: "January 25, 2025",
       isExtended: false
     },
     {
       event: "Conference Dates",
-      date: "February 19-22, 2024",
+      date: "December 15-18, 2025",
       isExtended: false
     }
   ];
@@ -48,7 +48,7 @@ const DatesPage: React.FC = () => {
             <h1 className="mb-4">Important Dates</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Key deadlines for IX SEEC 2024
+              Key deadlines for X SEEC 2025
             </p>
           </div>
 
@@ -78,7 +78,7 @@ const DatesPage: React.FC = () => {
             <div className="bg-seec-50 p-6 rounded-lg shadow-sm">
               <h2 className="text-xl font-semibold mb-4">Conference Schedule</h2>
               <p className="mb-4">
-                The conference will be held over four days from February 19-22, 2024. A detailed program schedule 
+                The conference will be held over four days from December 15-18, 2025. A detailed program schedule 
                 will be published closer to the event date.
               </p>
               <h3 className="text-lg font-medium mb-2">Tentative Schedule:</h3>

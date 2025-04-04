@@ -7,9 +7,9 @@ const CommitteePage: React.FC = () => {
   }, []);
 
   const patrons = [
-    { name: "Prof. Suhas S Joshi", title: "Director, IIT Indore" },
-    { name: "Prof. I. A. Palani", title: "Dean - R&D, IIT Indore" },
-    { name: "Prof. Santosh Ghosh", title: "Dean - Academics, IIT Indore" },
+    { name: "Prof. Suhas S Joshi", title: "Director, IIT Jodhpur" },
+    { name: "Prof. I. A. Palani", title: "Dean - R&D, IIT Jodhpur" },
+    { name: "Prof. Santosh Ghosh", title: "Dean - Academics, IIT Jodhpur" },
   ];
 
   const chairs = [
@@ -62,7 +62,7 @@ const CommitteePage: React.FC = () => {
             <h1 className="mb-4">Organizing Committee</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Meet the team behind the 9th International Conference on Sustainable Energy and Environmental Challenges
+              Meet the team behind the 10th International Conference on Sustainable Energy and Environmental Challenges
             </p>
           </div>
 

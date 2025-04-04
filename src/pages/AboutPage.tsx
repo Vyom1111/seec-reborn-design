@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
       <section className="section-padding bg-white">
         <div className="container mx-auto container-padding">
           <div className="text-center mb-12">
-            <h1 className="mb-4">About IX SEEC</h1>
+            <h1 className="mb-4">About X SEEC</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-3xl mx-auto">
               The International Conference on Sustainable Energy and Environmental Challenges
@@ -21,9 +21,9 @@ const AboutPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg mx-auto">
               <p>
-                The 9th International Conference on Sustainable Energy and Environmental Challenges (SEEC-2024) 
-                will be held from February 19-22, 2024, at the Department of Mechanical Engineering, Indian Institute 
-                of Technology Indore, India.
+                The 10th International Conference on Sustainable Energy and Environmental Challenges (SEEC-2025) 
+                will be held from December 15-18, 2025, at the Department of Mechanical Engineering, Indian Institute 
+                of Technology Jodhpur, India.
               </p>
               
               <p>
@@ -54,17 +54,17 @@ const AboutPage: React.FC = () => {
                 held at prestigious institutions across India.
               </p>
               
-              <h2>About IIT Indore</h2>
+              <h2>About IIT Jodhpur</h2>
               <p>
-                Indian Institute of Technology Indore (IIT Indore) is one of the newer IITs established by the 
-                Government of India in 2009. Despite its young age, IIT Indore has established itself as a 
+                Indian Institute of Technology Jodhpur (IIT Jodhpur) is one of the newer IITs established by the 
+                Government of India in 2009. Despite its young age, IIT Jodhpur has established itself as a 
                 center of excellence in research and education, particularly in the fields of engineering, 
                 science, humanities, and social sciences.
               </p>
               
               <p>
-                Located in Madhya Pradesh, IIT Indore's campus is situated in the picturesque Simrol area, 
-                about 25 km from Indore city. The institute offers a vibrant academic environment that 
+                Located in Madhya Pradesh, IIT Jodhpur's campus is situated in the picturesque Simrol area, 
+                about 25 km from Jodhpur city. The institute offers a vibrant academic environment that 
                 fosters innovation, research, and entrepreneurship.
               </p>
             </div>

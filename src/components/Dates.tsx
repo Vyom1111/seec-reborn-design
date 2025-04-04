@@ -21,17 +21,17 @@ const Dates: React.FC = () => {
     },
     {
       event: "Notification of Paper Acceptance",
-      date: "January 15, 2024",
+      date: "January 15, 2025",
       isExtended: false
     },
     {
       event: "Early Bird Registration",
-      date: "January 25, 2024",
+      date: "January 25, 2025",
       isExtended: false
     },
     {
       event: "Conference Dates",
-      date: "February 19-22, 2024",
+      date: "December 15-18, 2025",
       isExtended: false
     }
   ];

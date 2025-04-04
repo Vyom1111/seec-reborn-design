@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto container-padding">
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">IX SEEC 2024</h3>
+            <h3 className="text-xl font-bold mb-4">X SEEC 2025</h3>
             <p className="text-gray-300">
-              9th International Conference on Sustainable Energy and Environmental Challenges
+              10th International Conference on Sustainable Energy and Environmental Challenges
             </p>
             <p className="text-gray-300 mt-2">
-              February 19-22, 2024<br />
-              IIT Indore, India
+              December 15-18, 2025<br />
+              IIT Jodhpur, India
             </p>
           </div>
           
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">seec2024@iiti.ac.in</span>
+                <span className="text-gray-300">seec2025@iiti.ac.in</span>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 flex-shrink-0" />
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  IIT Indore, Khandwa Road, Simrol, Indore 453552, India
+                  IIT Jodhpur, NH 62, Surpura Bypass Rd, Karwar, Jheepasani, Rajasthan 342030, India
                 </span>
               </li>
             </ul>
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               Department of Mechanical Engineering
             </p>
             <p className="text-gray-300">
-              Indian Institute of Technology Indore
+              Indian Institute of Technology Jodhpur
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} IX SEEC 2024. All rights reserved.
+              &copy; {new Date().getFullYear()} X SEEC 2025. All rights reserved.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
