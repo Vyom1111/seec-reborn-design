@@ -3,6 +3,8 @@ import React from 'react';
 import { ArrowRight, Calendar, MapPin, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
+import iitjLogo from '@/assets/iitj-logo.png'; // You'll need to add this image
+import iseesLogo from '@/assets/isees-logo.png'; // You'll need to add this image
 
 const Hero: React.FC = () => {
   return (
@@ -16,6 +18,12 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 py-12 md:py-24 relative z-10">
         <div className="flex flex-col items-center text-center">
+          {/* Logos */}
+          <div className="flex justify-between items-center w-full max-w-4xl mb-8">
+            <img src={iitjLogo} alt="IIT-J Logo" className="h-20 md:h-24" />
+            <img src={iseesLogo} alt="ISEES Logo" className="h-16 md:h-20" />
+          </div>
+          
           <span className="text-seec-300 text-lg mb-4 animate-fade-in">December 13-15, 2024 | IIT Mandi, Himachal Pradesh, India</span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
             IX International Conference on<br />Sustainable Energy and Environmental Challenges

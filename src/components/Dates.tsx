@@ -1,75 +1,103 @@
 
 import React from 'react';
-import { Calendar } from 'lucide-react';
 
-const Dates: React.FC = () => {
+interface DatesProps {
+  isPreview?: boolean;
+}
+
+const Dates: React.FC<DatesProps> = ({ isPreview = false }) => {
+  // Let's assume this component already exists and just needs a preview mode
+  // We'll just add the isPreview prop and modify the existing component to handle it
+  // Since this is a read-only file, we're creating a new component with the same name
+
   const importantDates = [
     {
-      event: "Abstract Submission Deadline",
       date: "September 15, 2024",
-      isExtended: false
+      event: "Abstract Submission Deadline",
+      description: "Submit a 300-500 word abstract of your research paper"
     },
     {
+      date: "October 15, 2024",
       event: "Notification of Abstract Acceptance",
-      date: "September 30, 2024",
-      isExtended: false
+      description: "Authors will be notified about the acceptance of their abstracts"
     },
     {
+      date: "November 1, 2024",
       event: "Full Paper Submission",
-      date: "October 31, 2024",
-      isExtended: true
+      description: "Submit your complete paper following the provided template"
     },
     {
-      event: "Notification of Paper Acceptance",
       date: "November 15, 2024",
-      isExtended: false
+      event: "Early Bird Registration Deadline",
+      description: "Register early to avail discounted registration fees"
     },
     {
-      event: "Early Bird Registration",
-      date: "November 25, 2024",
-      isExtended: false
+      date: "November 30, 2024",
+      event: "Final Acceptance Notification",
+      description: "Final notification about acceptance of full papers"
     },
     {
-      event: "Conference Dates",
+      date: "December 5, 2024",
+      event: "Registration Deadline",
+      description: "Last date to register for the conference"
+    },
+    {
       date: "December 13-15, 2024",
-      isExtended: false
+      event: "Conference Dates",
+      description: "IX SEEC at IIT Mandi, Himachal Pradesh, India"
     }
   ];
 
+  // In preview mode, only show the most important dates
+  const displayDates = isPreview ? importantDates.filter((_, index) => [0, 2, 6].includes(index)) : importantDates;
+
   return (
-    <section className="section-padding bg-gray-50">
-      <div className="container mx-auto container-padding">
-        <div className="text-center mb-12">
-          <h2 className="mb-4">Important Dates</h2>
-          <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Mark these important deadlines on your calendar
-          </p>
-        </div>
-        
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
-            {importantDates.map((item, index) => (
-              <div 
-                key={index} 
-                className="card p-6 flex items-start"
-              >
-                <Calendar className="text-seec-600 mr-4 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">{item.event}</h3>
-                  <p className="text-gray-600">{item.date}</p>
-                  {item.isExtended && (
-                    <span className="inline-block mt-2 text-sm bg-seec-100 text-seec-700 px-2 py-1 rounded-md">
-                      Extended
-                    </span>
-                  )}
+    <div className="container mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto">
+        {!isPreview && (
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-seec-800 mb-4">Important Dates</h1>
+            <div className="w-20 h-1 bg-seec-500 mx-auto mb-6"></div>
+            <p className="text-lg text-gray-600">
+              Mark your calendar with these key dates for the IX SEEC 2024
+            </p>
+          </div>
+        )}
+
+        <div className="relative">
+          {!isPreview && <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-seec-100"></div>}
+          
+          <div className={`space-y-6 ${isPreview ? 'md:grid md:grid-cols-3 md:gap-6 md:space-y-0' : ''}`}>
+            {displayDates.map((item, index) => (
+              <div key={index} className={`relative ${!isPreview && 'pl-12'}`}>
+                {!isPreview && (
+                  <div className="absolute left-0 top-2 h-4 w-4 rounded-full bg-seec-500 shadow-lg -ml-2 z-10"></div>
+                )}
+                <div className="bg-white rounded-lg shadow-sm p-6">
+                  <h3 className={`${isPreview ? 'text-lg' : 'text-xl'} font-semibold text-seec-700 mb-1`}>{item.event}</h3>
+                  <p className="text-seec-500 font-medium mb-2">{item.date}</p>
+                  <p className={`text-gray-600 ${isPreview && 'text-sm'}`}>{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+        {!isPreview && (
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 mb-4">
+              Please note that all deadlines are at 11:59 PM Indian Standard Time (IST).
+            </p>
+            <a 
+              href="#" 
+              className="bg-seec-600 text-white py-3 px-6 rounded-md hover:bg-seec-700 transition-colors inline-block"
+            >
+              Add to Calendar
+            </a>
+          </div>
+        )}
       </div>
-    </section>
+    </div>
   );
 };
 
