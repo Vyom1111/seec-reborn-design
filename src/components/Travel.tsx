@@ -10,7 +10,7 @@ const Travel: React.FC = () => {
           <h2 className="mb-4">Travel Information</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            How to reach IIT Mandi for the IX SEEC Conference
+            How to reach IIT Jodhpur for the X SEEC Conference
           </p>
         </div>
         
@@ -23,7 +23,7 @@ const Travel: React.FC = () => {
               <h3 className="text-xl font-semibold mb-3 text-center">By Air</h3>
               <div>
                 <p className="text-gray-700 mb-3">
-                  The nearest airports to IIT Mandi are:
+                  The nearest airports to IIT Jodhpur are:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -32,7 +32,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Bhuntar Airport (KUU)</p>
-                      <p className="text-gray-600 text-sm">60 km from IIT Mandi (1.5 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">60 km from IIT Jodhpur (1.5 hours by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -41,7 +41,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Chandigarh Airport (IXC)</p>
-                      <p className="text-gray-600 text-sm">175 km from IIT Mandi (5 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">175 km from IIT Jodhpur (5 hours by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -50,7 +50,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Delhi Airport (DEL)</p>
-                      <p className="text-gray-600 text-sm">470 km from IIT Mandi (10 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">470 km from IIT Jodhpur (10 hours by taxi)</p>
                     </div>
                   </li>
                 </ul>
@@ -64,7 +64,7 @@ const Travel: React.FC = () => {
               <h3 className="text-xl font-semibold mb-3 text-center">By Train</h3>
               <div>
                 <p className="text-gray-700 mb-3">
-                  The nearest railway stations to IIT Mandi are:
+                  The nearest railway stations to IIT Jodhpur are:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -73,7 +73,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Kiratpur Sahib</p>
-                      <p className="text-gray-600 text-sm">110 km from IIT Mandi (3 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">110 km from IIT Jodhpur (3 hours by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -82,7 +82,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Una</p>
-                      <p className="text-gray-600 text-sm">130 km from IIT Mandi (4 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">130 km from IIT Jodhpur (4 hours by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -91,7 +91,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Chandigarh</p>
-                      <p className="text-gray-600 text-sm">175 km from IIT Mandi (5 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">175 km from IIT Jodhpur (5 hours by taxi)</p>
                     </div>
                   </li>
                 </ul>
@@ -105,7 +105,7 @@ const Travel: React.FC = () => {
               <h3 className="text-xl font-semibold mb-3 text-center">By Road</h3>
               <div>
                 <p className="text-gray-700 mb-3">
-                  IIT Mandi is well connected by road from:
+                  IIT Jodhpur is well connected by road from:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -114,7 +114,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Mandi Town</p>
-                      <p className="text-gray-600 text-sm">20 km from IIT Mandi (45 minutes by taxi)</p>
+                      <p className="text-gray-600 text-sm">20 km from IIT Jodhpur (45 minutes by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -123,7 +123,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Shimla</p>
-                      <p className="text-gray-600 text-sm">140 km from IIT Mandi (4 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">140 km from IIT Jodhpur (4 hours by taxi)</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -132,7 +132,7 @@ const Travel: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium">Chandigarh</p>
-                      <p className="text-gray-600 text-sm">175 km from IIT Mandi (5 hours by taxi)</p>
+                      <p className="text-gray-600 text-sm">175 km from IIT Jodhpur (5 hours by taxi)</p>
                     </div>
                   </li>
                 </ul>
@@ -152,7 +152,7 @@ const Travel: React.FC = () => {
               <div className="bg-seec-50 p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Recommended Taxi Services</h4>
                 <p className="text-gray-700 mb-1"><span className="font-medium">Mandi Taxi Association:</span> +91 1905 xxxxxx</p>
-                <p className="text-gray-700"><span className="font-medium">IIT Mandi Travel Desk:</span> travel@iitmandi.ac.in</p>
+                <p className="text-gray-700"><span className="font-medium">IIT Jodhpur Travel Desk:</span> travel@iitmandi.ac.in</p>
               </div>
             </div>
           </div>

@@ -106,7 +106,7 @@ const Sponsorship: React.FC = () => {
           <h2 className="mb-4">Sponsorship Opportunities</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Partner with IX SEEC to showcase your brand to leading researchers and professionals
+            Partner with X SEEC to showcase your brand to leading researchers and professionals
           </p>
         </div>
         

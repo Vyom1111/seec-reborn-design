@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Conference Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">IX SEEC 2024</h3>
+            <h3 className="text-xl font-bold mb-4 text-white">X SEEC 2024</h3>
             <p className="mb-4">
               International Conference on Sustainable Energy and Environmental Challenges
             </p>
-            <p className="mb-4">December 13-15, 2024</p>
-            <p>IIT Mandi, Himachal Pradesh, India</p>
+            <p className="mb-4">December 15-18, 2024</p>
+            <p>IIT Jodhpur, Himachal Pradesh, India</p>
           </div>
           
           {/* Quick Links */}
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin className="mr-3 text-seec-300 flex-shrink-0 mt-1" size={18} />
-                <span>IIT Mandi, Kamand Campus, Himachal Pradesh, India - 175075</span>
+                <span>IIT Jodhpur, Kamand Campus, Himachal Pradesh, India - 175075</span>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-3 text-seec-300 flex-shrink-0" size={18} />
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-700 mt-10 pt-6">
           <div className="text-center text-sm text-gray-400">
-            <p>© {currentYear} IX SEEC. All rights reserved.</p>
+            <p>© {currentYear} X SEEC. All rights reserved.</p>
           </div>
         </div>
       </div>

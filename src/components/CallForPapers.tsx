@@ -18,7 +18,7 @@ const CallForPapers: React.FC<CallForPapersProps> = ({ isPreview = false }) => {
             <h1 className="text-4xl font-bold text-seec-800 mb-4">Call for Papers</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600">
-              Submit your research papers for the IX International Conference on Sustainable Energy and Environmental Challenges
+              Submit your research papers for the X International Conference on Sustainable Energy and Environmental Challenges
             </p>
           </div>
         )}

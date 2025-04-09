@@ -7,13 +7,13 @@ const Contact: React.FC = () => {
     {
       role: "Conference Chair",
       name: "Prof. John Smith",
-      affiliation: "IIT Mandi",
+      affiliation: "IIT Jodhpur",
       email: "chair@ixseec.org"
     },
     {
       role: "Program Chair",
       name: "Prof. Emily Johnson",
-      affiliation: "IIT Mandi",
+      affiliation: "IIT Jodhpur",
       email: "program@ixseec.org"
     },
     {
@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
     {
       role: "Treasurer",
       name: "Prof. Sarah Williams",
-      affiliation: "IIT Mandi",
+      affiliation: "IIT Jodhpur",
       email: "treasurer@ixseec.org"
     }
   ];
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
           <h2 className="mb-4">Contact Us</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Get in touch with the IX SEEC organizing team for any queries
+            Get in touch with the X SEEC organizing team for any queries
           </p>
         </div>
         

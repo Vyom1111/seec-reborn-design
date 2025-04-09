@@ -60,7 +60,7 @@ const Registration: React.FC = () => {
           <h2 className="mb-4">Registration</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Register for IX SEEC to present your research and network with peers
+            Register for X SEEC to present your research and network with peers
           </p>
         </div>
         
@@ -119,10 +119,10 @@ const Registration: React.FC = () => {
               <div>
                 <h4 className="font-medium mb-2">Bank Transfer</h4>
                 <p className="text-gray-700 mb-1"><span className="font-medium">Bank Name:</span> State Bank of India</p>
-                <p className="text-gray-700 mb-1"><span className="font-medium">Account Name:</span> IX SEEC Conference</p>
+                <p className="text-gray-700 mb-1"><span className="font-medium">Account Name:</span> X SEEC Conference</p>
                 <p className="text-gray-700 mb-1"><span className="font-medium">Account Number:</span> XXXXXXXXXX</p>
                 <p className="text-gray-700 mb-1"><span className="font-medium">IFSC Code:</span> SBIN0XXXXX</p>
-                <p className="text-gray-700"><span className="font-medium">Branch:</span> IIT Mandi Branch</p>
+                <p className="text-gray-700"><span className="font-medium">Branch:</span> IIT Jodhpur Branch</p>
               </div>
               <div>
                 <h4 className="font-medium mb-2">Online Payment</h4>

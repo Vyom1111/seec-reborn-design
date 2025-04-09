@@ -3,8 +3,8 @@ import React from 'react';
 import { ArrowRight, Calendar, MapPin, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
-import iitjLogo from '@/assets/iitj-logo.png'; // You'll need to add this image
-import iseesLogo from '@/assets/isees-logo.png'; // You'll need to add this image
+// import iitjLogo from '@/assets/iitj-logo.png'; // You'll need to add this image
+// import iseesLogo from '@/assets/isees-logo.png'; // You'll need to add this image
 
 const Hero: React.FC = () => {
   return (
@@ -20,13 +20,18 @@ const Hero: React.FC = () => {
         <div className="flex flex-col items-center text-center">
           {/* Logos */}
           <div className="flex justify-between items-center w-full max-w-4xl mb-8">
-            <img src={iitjLogo} alt="IIT-J Logo" className="h-20 md:h-24" />
-            <img src={iseesLogo} alt="ISEES Logo" className="h-16 md:h-20" />
+            {/* <img src={iitjLogo} alt="IIT-J Logo" className="h-20 md:h-24" /> */}
+            {/* <img src={iseesLogo} alt="ISEES Logo" className="h-16 md:h-20" /> */}
           </div>
           
-          <span className="text-seec-300 text-lg mb-4 animate-fade-in">December 13-15, 2024 | IIT Mandi, Himachal Pradesh, India</span>
+          <span className="text-seec-300 text-lg mb-4 font-bold animate-fade-in">
+            X SEEC<br />
+            Dec 15-18, 2024 | IIT Jodhpur
+          </span>
+
+          
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-            IX International Conference on<br />Sustainable Energy and Environmental Challenges
+            X International Conference on<br />Sustainable Energy and Environmental Challenges
           </h1>
           <p
             className="text-xl text-white/90 max-w-3xl mb-10 animate-fade-in"
@@ -48,7 +53,7 @@ const Hero: React.FC = () => {
               <MapPin className="text-seec-300 mr-3 flex-shrink-0" />
               <div>
                 <h3 className="font-medium text-white">Venue</h3>
-                <p className="text-white/80 text-sm">IIT Mandi, Himachal Pradesh</p>
+                <p className="text-white/80 text-sm">IIT Jodhpur, Himachal Pradesh</p>
               </div>
             </div>
             

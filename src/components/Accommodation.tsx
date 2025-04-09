@@ -9,7 +9,7 @@ const Accommodation: React.FC = () => {
       description: "For invited speakers and limited number of participants",
       options: [
         {
-          name: "IIT Mandi Guest House",
+          name: "IIT Jodhpur Guest House",
           facilities: ["Wi-Fi", "Air Conditioning", "Attached Bathroom", "TV", "Room Service"],
           distance: "Within campus",
           pricing: "Complementary for invited speakers"
@@ -76,7 +76,7 @@ const Accommodation: React.FC = () => {
           <h2 className="mb-4">Accommodation</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Accommodation options for IX SEEC participants
+            Accommodation options for X SEEC participants
           </p>
         </div>
         

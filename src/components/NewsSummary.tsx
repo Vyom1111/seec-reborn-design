@@ -7,12 +7,12 @@ const NewsSummary: React.FC = () => {
     {
       date: "April 5, 2024",
       title: "Call for Papers Released",
-      content: "The Call for Papers for IX SEEC is now available. Submit your abstracts by September 15, 2024."
+      content: "The Call for Papers for X SEEC is now available. Submit your abstracts by September 15, 2024."
     },
     {
       date: "March 28, 2024",
       title: "Confirmed Keynote Speakers",
-      content: "We are pleased to announce our first keynote speakers for IX SEEC 2024."
+      content: "We are pleased to announce our first keynote speakers for X SEEC 2024."
     },
     {
       date: "March 15, 2024",

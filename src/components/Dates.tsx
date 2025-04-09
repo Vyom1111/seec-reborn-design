@@ -42,9 +42,9 @@ const Dates: React.FC<DatesProps> = ({ isPreview = false }) => {
       description: "Last date to register for the conference"
     },
     {
-      date: "December 13-15, 2024",
+      date: "December 15-18, 2024",
       event: "Conference Dates",
-      description: "IX SEEC at IIT Mandi, Himachal Pradesh, India"
+      description: "X SEEC at IIT Jodhpur, Himachal Pradesh, India"
     }
   ];
 
@@ -59,7 +59,7 @@ const Dates: React.FC<DatesProps> = ({ isPreview = false }) => {
             <h1 className="text-4xl font-bold text-seec-800 mb-4">Important Dates</h1>
             <div className="w-20 h-1 bg-seec-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600">
-              Mark your calendar with these key dates for the IX SEEC 2024
+              Mark your calendar with these key dates for the X SEEC 2024
             </p>
           </div>
         )}
