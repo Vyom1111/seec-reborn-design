@@ -1,46 +1,8 @@
 
-// import React from 'react';
-// import { ArrowRight } from 'lucide-react';
-// import { Link } from 'react-router-dom';
-
-// const Hero: React.FC = () => {
-//   return (
-//     <section className="relative min-h-screen flex items-center hero-gradient">
-//       <div className="absolute inset-0 bg-seec-950/10 z-0"></div>
-//       <div className="container mx-auto px-4 py-12 md:py-24 relative z-10">
-//         <div className="flex flex-col items-center text-center">
-//           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-//             10th International Conference on Sustainable Energy and Environmental Challenges (SEEC-2025)
-//           </h1>
-//           <p className="text-xl text-white/90 max-w-3xl mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-//             December 15-18, 2025 | Department of Mechanical Engineering, IIT Jodhpur, India
-//           </p>
-//           <div className="space-x-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-//             <Link to="/about" className="btn btn-primary">
-//               Learn More
-//             </Link>
-//             <Link to="/registration" className="btn bg-white text-seec-600 hover:bg-gray-100">
-//               Register Now
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-//         <a href="#about" aria-label="Scroll down">
-//           <ArrowRight size={24} className="text-white transform rotate-90" />
-//         </a>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar, MapPin, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroBg from '@/assets/hero-bg.jpg'; // ✅ Import your background image
+import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -54,21 +16,49 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 py-12 md:py-24 relative z-10">
         <div className="flex flex-col items-center text-center">
+          <span className="text-seec-300 text-lg mb-4 animate-fade-in">December 13-15, 2024 | IIT Mandi, Himachal Pradesh, India</span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-            10<sup>th</sup> International Conference on Sustainable Energy and Environmental Challenges (SEEC-2025)
+            IX International Conference on<br />Sustainable Energy and Environmental Challenges
           </h1>
           <p
-            className="text-xl text-white/90 max-w-3xl mb-8 animate-fade-in"
+            className="text-xl text-white/90 max-w-3xl mb-10 animate-fade-in"
             style={{ animationDelay: '0.2s' }}
           >
-            December 15–18, 2025 | Department of Mechanical Engineering, IIT Jodhpur, India
+            Join leading researchers and professionals to address critical challenges in energy, environment, and sustainability
           </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto w-full mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 flex items-center">
+              <Calendar className="text-seec-300 mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="font-medium text-white">Important Dates</h3>
+                <p className="text-white/80 text-sm">Abstract due: Sept 15, 2024</p>
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 flex items-center">
+              <MapPin className="text-seec-300 mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="font-medium text-white">Venue</h3>
+                <p className="text-white/80 text-sm">IIT Mandi, Himachal Pradesh</p>
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 flex items-center">
+              <FileText className="text-seec-300 mr-3 flex-shrink-0" />
+              <div>
+                <h3 className="font-medium text-white">Submissions</h3>
+                <p className="text-white/80 text-sm">Now open</p>
+              </div>
+            </div>
+          </div>
+          
           <div className="space-x-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Link to="/about" className="btn btn-primary">
-              Learn More
-            </Link>
-            <Link to="/registration" className="btn bg-white text-seec-600 hover:bg-gray-100">
+            <Link to="/registration" className="btn btn-primary">
               Register Now
+            </Link>
+            <Link to="/call-for-papers" className="btn bg-white text-seec-600 hover:bg-gray-100">
+              Submit Paper
             </Link>
           </div>
         </div>

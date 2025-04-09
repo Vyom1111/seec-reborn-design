@@ -6,32 +6,32 @@ const Dates: React.FC = () => {
   const importantDates = [
     {
       event: "Abstract Submission Deadline",
-      date: "November 15, 2023",
+      date: "September 15, 2024",
       isExtended: false
     },
     {
       event: "Notification of Abstract Acceptance",
-      date: "November 30, 2023",
+      date: "September 30, 2024",
       isExtended: false
     },
     {
       event: "Full Paper Submission",
-      date: "December 31, 2023",
+      date: "October 31, 2024",
       isExtended: true
     },
     {
       event: "Notification of Paper Acceptance",
-      date: "January 15, 2025",
+      date: "November 15, 2024",
       isExtended: false
     },
     {
       event: "Early Bird Registration",
-      date: "January 25, 2025",
+      date: "November 25, 2024",
       isExtended: false
     },
     {
       event: "Conference Dates",
-      date: "December 15-18, 2025",
+      date: "December 13-15, 2024",
       isExtended: false
     }
   ];
@@ -43,7 +43,7 @@ const Dates: React.FC = () => {
           <h2 className="mb-4">Important Dates</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Make sure to mark these important deadlines on your calendar
+            Mark these important deadlines on your calendar
           </p>
         </div>
         

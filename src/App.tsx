@@ -14,6 +14,11 @@ import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TechnicalProgramPage from "./pages/TechnicalProgramPage";
+import SpeakersPage from "./pages/SpeakersPage";
+import TravelPage from "./pages/TravelPage";
+import AccommodationPage from "./pages/AccommodationPage";
+import SponsorshipPage from "./pages/SponsorshipPage";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +36,11 @@ const App = () => (
           <Route path="/dates" element={<DatesPage />} />
           <Route path="/call-for-papers" element={<CallForPapersPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/technical-program" element={<TechnicalProgramPage />} />
+          <Route path="/speakers" element={<SpeakersPage />} />
+          <Route path="/travel" element={<TravelPage />} />
+          <Route path="/accommodation" element={<AccommodationPage />} />
+          <Route path="/sponsorship" element={<SponsorshipPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

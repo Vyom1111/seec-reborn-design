@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto container-padding">
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">X SEEC 2025</h3>
+            <h3 className="text-xl font-bold mb-4">IX SEEC 2024</h3>
             <p className="text-gray-300">
-              10th International Conference on Sustainable Energy and Environmental Challenges
+              9th International Conference on Sustainable Energy and Environmental Challenges
             </p>
             <p className="text-gray-300 mt-2">
-              December 15-18, 2025<br />
-              IIT Jodhpur, India
+              December 13-15, 2024<br />
+              IIT Mandi, Himachal Pradesh, India
             </p>
           </div>
           
@@ -47,6 +47,11 @@ const Footer: React.FC = () => {
                   Call for Papers
                 </Link>
               </li>
+              <li>
+                <Link to="/registration" className="text-gray-300 hover:text-white transition-colors">
+                  Registration
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -55,16 +60,18 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">seec2025@iiti.ac.in</span>
+                <span className="text-gray-300">info@ixseec.org</span>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">+91 731 660 3173</span>
+                <span className="text-gray-300">+91 1234 567890</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  IIT Jodhpur, NH 62, Surpura Bypass Rd, Karwar, Jheepasani, Rajasthan 342030, India
+                  Indian Institute of Technology Mandi,
+                  Kamand Campus, VPO Kamand,
+                  Mandi, Himachal Pradesh 175005, India
                 </span>
               </li>
             </ul>
@@ -72,11 +79,11 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="text-lg font-bold mb-4">Organized By</h3>
-            <p className="text-gray-300">
-              Department of Mechanical Engineering
+            <p className="text-gray-300 mb-2">
+              IIT Mandi Catalyst
             </p>
             <p className="text-gray-300">
-              Indian Institute of Technology Jodhpur
+              International Society for Energy, Environment and Sustainability (ISEES)
             </p>
           </div>
         </div>
@@ -84,7 +91,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} X SEEC 2025. All rights reserved.
+              &copy; {new Date().getFullYear()} IX SEEC. All rights reserved.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

@@ -1,12 +1,56 @@
 
 import React from 'react';
-import { CreditCard, User, Users, Globe } from 'lucide-react';
+import { CreditCard, UserCheck, FileCheck, Calendar } from 'lucide-react';
 
 const Registration: React.FC = () => {
-  const fees = [
-    { category: "Indian Delegates", academic: "₹12,000", industry: "₹15,000", student: "₹8,000" },
-    { category: "International Delegates", academic: "$400", industry: "$500", student: "$250" },
-    { category: "Accompanying Person", academic: "₹6,000", industry: "₹6,000", student: "$200" }
+  const registrationFees = [
+    {
+      category: "Student / Research Scholar",
+      earlyBird: "₹5,000",
+      regular: "₹6,000",
+      inclusions: ["Conference kit", "Lunch & refreshments", "Access to all sessions", "Certificate"]
+    },
+    {
+      category: "Academic / Faculty",
+      earlyBird: "₹7,500",
+      regular: "₹8,500",
+      inclusions: ["Conference kit", "Lunch & refreshments", "Access to all sessions", "Certificate", "Conference dinner"]
+    },
+    {
+      category: "Industry Professional",
+      earlyBird: "₹10,000",
+      regular: "₹12,000",
+      inclusions: ["Conference kit", "Lunch & refreshments", "Access to all sessions", "Certificate", "Conference dinner"]
+    },
+    {
+      category: "International Delegate",
+      earlyBird: "$300",
+      regular: "$350",
+      inclusions: ["Conference kit", "Lunch & refreshments", "Access to all sessions", "Certificate", "Conference dinner"]
+    }
+  ];
+
+  const registrationSteps = [
+    {
+      icon: UserCheck,
+      title: "Account Creation",
+      description: "Create an account on the conference portal with your personal and professional details"
+    },
+    {
+      icon: FileCheck,
+      title: "Abstract/Paper Submission",
+      description: "Submit your accepted abstract or paper in the required format"
+    },
+    {
+      icon: CreditCard,
+      title: "Fee Payment",
+      description: "Complete payment using credit/debit card, net banking, or bank transfer"
+    },
+    {
+      icon: Calendar,
+      title: "Confirmation",
+      description: "Receive confirmation email with registration details and instructions"
+    }
   ];
 
   return (
@@ -16,101 +60,75 @@ const Registration: React.FC = () => {
           <h2 className="mb-4">Registration</h2>
           <div className="w-20 h-1 bg-seec-500 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Join us at the 10th International Conference on Sustainable Energy and Environmental Challenges
+            Register for IX SEEC to present your research and network with peers
           </p>
         </div>
         
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-seec-50 p-6 rounded-lg shadow-sm mb-8">
-            <h3 className="text-xl font-semibold mb-4 flex items-center">
-              <CreditCard className="mr-2 text-seec-600" size={24} />
-              Registration Fees
-            </h3>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr>
-                    <th>Category</th>
-                    <th>Academic</th>
-                    <th>Industry</th>
-                    <th>Student</th>
+        <div className="max-w-5xl mx-auto mb-16">
+          <h3 className="text-xl font-semibold mb-6 text-center">Registration Fees</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white">
+              <thead>
+                <tr>
+                  <th className="py-3 px-4 bg-seec-50 border-b text-left">Category</th>
+                  <th className="py-3 px-4 bg-seec-50 border-b text-center">Early Bird<br/><span className="text-sm font-normal">(Before Nov 25, 2024)</span></th>
+                  <th className="py-3 px-4 bg-seec-50 border-b text-center">Regular<br/><span className="text-sm font-normal">(After Nov 25, 2024)</span></th>
+                  <th className="py-3 px-4 bg-seec-50 border-b text-left">Inclusions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {registrationFees.map((fee, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="py-3 px-4 border-b">{fee.category}</td>
+                    <td className="py-3 px-4 border-b text-center font-medium">{fee.earlyBird}</td>
+                    <td className="py-3 px-4 border-b text-center font-medium">{fee.regular}</td>
+                    <td className="py-3 px-4 border-b">
+                      <ul className="list-disc pl-4">
+                        {fee.inclusions.map((inclusion, idx) => (
+                          <li key={idx} className="text-sm">{inclusion}</li>
+                        ))}
+                      </ul>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {fees.map((fee, index) => (
-                    <tr key={index}>
-                      <td>{fee.category}</td>
-                      <td>{fee.academic}</td>
-                      <td>{fee.industry}</td>
-                      <td>{fee.student}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            
-            <p className="mt-4 text-sm text-gray-600">
-              * Early bird registration fees (10% discount) are available until January 25, 2025
-            </p>
+                ))}
+              </tbody>
+            </table>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="card p-6">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-seec-100 p-3 rounded-full">
-                  <User className="text-seec-600" size={24} />
+          <p className="mt-4 text-sm text-gray-600">* All fees are inclusive of applicable taxes</p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-xl font-semibold mb-6 text-center">Registration Process</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {registrationSteps.map((step, index) => (
+              <div key={index} className="card p-6 text-center">
+                <div className="bg-seec-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <step.icon size={32} className="text-seec-600" />
                 </div>
+                <h4 className="font-semibold mb-2">Step {index + 1}: {step.title}</h4>
+                <p className="text-gray-600 text-sm">{step.description}</p>
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-center">Individual Registration</h3>
-              <p className="text-gray-600 text-center">
-                Includes conference kit, all sessions, lunch, tea/coffee, and conference dinner
-              </p>
-            </div>
-            
-            <div className="card p-6">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-seec-100 p-3 rounded-full">
-                  <Users className="text-seec-600" size={24} />
-                </div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-center">Group Registration</h3>
-              <p className="text-gray-600 text-center">
-                For 3+ delegates from the same organization, get a 15% discount
-              </p>
-            </div>
-            
-            <div className="card p-6">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-seec-100 p-3 rounded-full">
-                  <Globe className="text-seec-600" size={24} />
-                </div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-center">International Delegates</h3>
-              <p className="text-gray-600 text-center">
-                Special assistance for visa, accommodation, and local transportation
-              </p>
-            </div>
+            ))}
           </div>
-          
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">How to Register</h3>
-            <ol className="list-decimal pl-5 space-y-3">
-              <li>Complete the online registration form on the conference website</li>
-              <li>Make the payment through bank transfer or online payment gateway</li>
-              <li>Upload the payment proof in the registration portal</li>
-              <li>Receive confirmation email with your registration details</li>
-            </ol>
-            
-            <div className="mt-6 text-center">
-              <a 
-                href="https://forms.gle/seec-registration" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-primary"
-              >
-                Register Now
-              </a>
+        </div>
+        
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-seec-50 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">Payment Details</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-medium mb-2">Bank Transfer</h4>
+                <p className="text-gray-700 mb-1"><span className="font-medium">Bank Name:</span> State Bank of India</p>
+                <p className="text-gray-700 mb-1"><span className="font-medium">Account Name:</span> IX SEEC Conference</p>
+                <p className="text-gray-700 mb-1"><span className="font-medium">Account Number:</span> XXXXXXXXXX</p>
+                <p className="text-gray-700 mb-1"><span className="font-medium">IFSC Code:</span> SBIN0XXXXX</p>
+                <p className="text-gray-700"><span className="font-medium">Branch:</span> IIT Mandi Branch</p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Online Payment</h4>
+                <p className="text-gray-700 mb-3">You can also pay using our online payment portal with credit/debit cards and net banking options.</p>
+                <a href="#" className="btn btn-primary inline-block">Pay Now</a>
+              </div>
             </div>
           </div>
         </div>
